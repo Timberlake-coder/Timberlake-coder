@@ -12,9 +12,6 @@
 - **BSc Computer Science** at Westminster International University in Tashkent (2024–2028), researching U-Net based retinal lesion segmentation.
 - **Open to Full-Stack / AI Engineer roles** — remote or Tashkent.
 
-## Impact
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/impact-dark.svg"><img alt="Impact: 20+ production codebases in 10 months; ~140k lines in ITMarket, my largest codebase; 0.91 Dice on retinal vessel segmentation; 4 UI languages shipped: EN, RU, UZ, ZH" src="assets/impact-light.svg" width="100%"></picture>
 
 ## Tech stack
 
