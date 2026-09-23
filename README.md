@@ -28,14 +28,6 @@
 <a href="https://github.com/Timberlake-coder/powernet-mail-platform"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-powernet-mail-platform-dark.svg"><img alt="PowerNet Mail — Self-hosted mail platform with a custom Gmail-style webmail for company domains" src="assets/card-powernet-mail-platform-light.svg" width="49%"></picture></a>
 </p>
 
-## Research
-
-**Medical image analysis — WIUT, CS faculty**
-
-- Six-phase diabetic-retinopathy pipeline: CLAHE / Ben Graham preprocessing, MS-UNet vessel segmentation, optic-disc and lesion detection, EfficientNet-B4 grading.
-- Vessel model reached **0.91 Dice** and was distilled from 600 MB to under 100 MB with no accuracy loss.
-- Hemorrhage segmentation: two-stage U-Net (ResNet-50 + SCSE), Focal-Tversky loss, EMA, D4 test-time augmentation, fold ensembles; trained on rented A100/H100 GPUs.
-- Microaneurysm ceiling analysis showing the score cap came from annotation and distractor density, not the model (0.54 Dice on clean IDRiD vs 0.09 on the in-house set).
 
 ## More projects
 
