@@ -1,0 +1,35 @@
+name: Languages card
+on:
+  schedule:
+    - cron: "41 2 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  langs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check for STATS_TOKEN
+        id: token
+        env:
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: echo "present=$([ -n "$STATS_TOKEN" ] && echo yes || echo no)" >> "$GITHUB_OUTPUT"
+      - if: steps.token.outputs.present == 'yes'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - if: steps.token.outputs.present == 'yes'
+        working-directory: tools
+        env:
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: |
+          pip install -q -r requirements.txt
+          python -m gen.langs --out ../assets --exclude "dutyfree-storefront,faceid-attendance-saas,itmarket-ecommerce,netpos-cloud-pos,powernet-mail-platform,smart-restaurant-platform,Timberlake-coder"
+      - if: steps.token.outputs.present == 'yes'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/langs-*.svg
+          git diff --cached --quiet || { git commit -m "chore: refresh languages card"; git push; }
