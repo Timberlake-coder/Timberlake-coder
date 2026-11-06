@@ -1,5 +1,5 @@
 <div align="center">
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg"><img alt="Ozodbek Qodirjonov — Full-Stack &amp; AI Engineer. Multi-tenant SaaS, built end to end · Face recognition attendance in production · Retinal lesion segmentation research" src="assets/header-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg"><img alt="Ozodbek Qodirjonov — Full-Stack &amp; AI Engineer. Multi-tenant SaaS, built end to end · Face recognition attendance in production" src="assets/header-light.svg" width="100%"></picture>
 </div>
 
 <p align="center"><b>Full-Stack &amp; AI Engineer</b> · Head of IT Department @ PowerNet · Founder @ i7 Team · Tashkent, Uzbekistan</p>
@@ -9,7 +9,7 @@
 - **Head of IT Department** at [PowerNet](https://powernet.uz), one of Uzbekistan's leading system integrators. I lead in-house engineering and build the company's product line: FaceID, NETPOS, PowerNet Mail and Sklad.
 - **Founder** of [i7 Team](https://i7team.uz), a product studio for web apps, premium websites and ML solutions. Full-stack engineer for [dutyfree.uz](https://dutyfree.uz) and [ITMarket](https://itmarket.uz).
 - I ship complete systems: multi-tenant SaaS backends, real-time and offline-first web apps, face-recognition attendance with anti-spoofing, and self-hosted mail and e-commerce platforms.
-- **BSc Computer Science** at Westminster International University in Tashkent (2024–2028), researching U-Net based retinal lesion segmentation.
+- **BSc Computer Science** at Westminster International University in Tashkent (2024–2028).
 - **Open to Full-Stack / AI Engineer roles** — remote or Tashkent.
 
 
